@@ -13,7 +13,7 @@ fs.readdirSync(routesPath).forEach((file) => {
     return
   }
   let cs = require(routesPath + '/' + file)
-  let prefix = file.replace('.js', '').toLowerCase()
+  let prefix = file.replace('Controller.js', '').toLowerCase()
   server.addInstanceMethods(cs, prefix, {simple: true, async: true})
 })
 //启动服务

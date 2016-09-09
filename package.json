@@ -1,7 +1,7 @@
 {
   "name": "cw-api",
   "version": "1.0.0",
-  "description": "clouderwork api server",
+  "description": "a api server",
   "author": "felix33",
   "license": "ISC",
   "private": true,
@@ -10,31 +10,29 @@
     "eslint": "./node_modules/eslint/bin/eslint.js"
   },
   "scripts": {
-    "start": "gulp babel && node dist/server.js",
+    "start": "gulp babel && gulp default",
     "pretest": "gulp babel",
     "lint": "gulp lint"
   },
   "dependencies": {
     "hprose": "^2.0.22",
-    "babel": "^5.8.34",
-    "babel-core": "^5.8.25",
-    "babel-plugin-typecheck": "^1.3.0",
-    "babel-runtime": "^5.8.34",
-    "nodemon": "^1.8.1",
+    "lodash": "^4.15.0",
+    "assert": "^1.3.0",
+    "nodemon": "^1.8.1"
+  },
+  "devDependencies": {
     "gulp": "https://registry.npmjs.org/gulp/-/gulp-3.9.1.tgz",
     "gulp-babel": "^5.3.0",
     "gulp-cli": "^1.0.0",
     "gulp-concat": "^2.6.0",
     "gulp-nodemon": "^2.0.4",
-    "gulp-sourcemaps": "^1.6.0"
-  },
-  "devDependencies": {
-    "assert": "^1.3.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "babel": "^5.8.34",
     "babel-core": "^5.8.34",
-    "babel-eslint": "^5.0.0-beta4",
     "babel-plugin-typecheck": "^1.3.0",
+    "babel-runtime": "^5.8.34",
+    "babel-eslint": "^5.0.0-beta4",
     "eslint": "^1.6.0",
-    "gulp-eslint": "^3.0.1",
     "eslint-config-standard": "^6.0.0",
     "eslint-plugin-promise": "^2.0.1",
     "eslint-plugin-standard": "^2.0.0"
